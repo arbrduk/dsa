@@ -1,5 +1,3 @@
-// THIS IS THE PROVIDED CODE FOR PROGRAM #2, DSA 1, SPRING 2013
-//
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -97,12 +95,6 @@ int main() {
   writeDataList(theList);
 }
 
-// -------------------------------------------------
-// YOU MAY NOT CHANGE OR ADD ANY CODE ABOVE HERE !!!
-// -------------------------------------------------
-
-// You may add global variables, functions, and/or
-// class defintions here if you wish.
 list<Data *> countA[100000];
 list<Data *>::iterator ipC, ipF, ipD;
 list<Data *> l2;
@@ -127,25 +119,6 @@ inline bool compare(const Data* x, const Data* y) {
 }
 
 
-/*
-bool compare(const Data* item1, const Data* item2) {   // returns true if 
-	num1=20;
-	num2=20;
-	while ((item1 -> data)[num1] != '.') 
-		num1--;	
-	while ((item2 -> data)[num2] != '.') 
-		num2--;
-	if ((num1 == num2) && ((item1 -> data) ){
-		return (item1 -> data).compare((item2 -> data)) < 0;
-	}
-	else 
-		return (num1 < num2);
-}
-
-inline bool compare2(const Data* x, const Data* y) {
-	return (x->data).compare((y->data)) < 0;
-}
-*/
 void insertion_sort(list<Data *> &l){
    string temp;
    for (list<Data *>::iterator ipD = l.begin(); ipD != l.end(); ++ipD){
